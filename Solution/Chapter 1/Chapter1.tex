@@ -1,0 +1,270 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts} % enable the use of \mathbb
+\usepackage{physics}
+
+
+
+\title{Chapter 1}
+\author{Yu Lu}
+
+\begin{document}
+% define commands for special state vectors, p means positive, n means negative
+\newcommand{\pz}{\ket{\vb{+z}}}
+\newcommand{\nz}{\ket{\vb{-z}}}
+\newcommand{\px}{\ket{\vb{+x}}}
+\newcommand{\nx}{\ket{\vb{-x}}}
+\newcommand{\py}{\ket{\vb{+z}}}
+\newcommand{\ny}{\ket{\vb{-y}}}
+
+% writes expression of |+x> etc. in |z> basis
+\newcommand{\pxexpr}{ \frac{1}{\sqrt{2}} \pz + \frac{1}{\sqrt{2}} \nz}
+\newcommand{\nxexpr}{ \frac{1}{\sqrt{2}} \pz - \frac{1}{\sqrt{2}} \nz}
+\newcommand{\pyexpr}{ \frac{1}{\sqrt{2}} \pz + \frac{i}{\sqrt{2}} \nz}
+\newcommand{\nyexpr}{ \frac{1}{\sqrt{2}} \pz - \frac{i}{\sqrt{2}} \nz}
+\maketitle
+The two tables below shows correspondence of question index in 2nd Edition of the textbook and that in 1st Edition of the textbook.
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{l|c|c|c|c|c|c|c}
+            \hline
+            2nd Edition
+            &1.1
+            &1.2
+            &1.3
+            &1.4
+            &1.5
+            &1.6
+            &1.7
+            \\ \hline
+            1st Edition
+            &1.1
+            &1.2
+            &1.3
+            &1.4
+            &1.5
+            &1.6
+            &1.7
+            \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{l|c|c|c|c|c|c|c|c}
+            \hline
+            2nd Edition
+            &1.8
+            &1.9
+            &1.10
+            &1.11
+            &1.12
+            &1.13
+            &1.14
+            &1.15
+            \\ \hline
+            1st Edition
+            &1.8
+            &
+            &
+            &
+            &
+            &1.9
+            &
+            &
+            \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+\section*{Problem 1.9}
+Skipped
+\section*{Problem 1.10}
+
+According to Problem 1.3,
+\begin{equation} 
+    \ket{\vb{+n}} = \cos{\frac{\theta}{2}} \ket{\vb{+z}} + e^{i\phi} \sin{\frac{\theta}{2}} \ket{\vb{-z}}
+    \label{P1.10-orientation vector}
+\end{equation}
+Therefore,
+\begin{equation} \nonumber
+    \begin{cases}
+        \cos{\frac{\theta}{2}} &= \frac{1}{2} \\
+        e^{i\phi} \sin{\frac{\theta}{2}} &= \frac{\sqrt{3}}{2} i
+    \end{cases}
+\end{equation}
+\begin{equation*}
+    \theta ={} \frac{2}{3} \pi, \quad 
+    \phi ={} \frac{\pi}{2}
+\end{equation*}
+\begin{equation} \nonumber
+    \boxed{
+    \begin{split}
+        \vb{n} &={} 
+    <\sin{\theta}\cos{\phi}, \sin{\theta}\sin{\phi},\cos{\theta}> \\
+    &={}
+    <0,\frac{\sqrt{3}}{2}, -\frac{1}{2}>
+    \end{split}}
+\end{equation}
+Using $P(\lambda_i)=\abs{\braket{\lambda_i}{\psi}}^2$ and the condition $\ket{\psi}=\frac{1}{2}\ket{+\vb{z}}+\frac{\sqrt{3}i}{2}\ket{-\vb{z}}$,  
+\begin{equation} \nonumber
+    P(\vb{+z}) = \frac{1}{4}, \quad
+    P(\vb{-z}) = \frac{3}{4}
+\end{equation}
+Using the definition of expectation value $\expval{A}=\sum_i{P(\lambda_i)\lambda_i}$,
+\begin{equation*}
+    \boxed{
+    \begin{split}
+        \expval{S_z} =&{} \frac{\hbar}{2} P(\vb{+z}) + (-\frac{\hbar}{2}) P(\vb{-z})\\
+    =&{}  -\frac{\hbar}{4}
+    \end{split}}
+\end{equation*}
+Considering $\ket{\vb{+x}} = \frac{1}{\sqrt{2}} \ket{\vb{+z}} + \frac{1}{\sqrt{2}} \ket{\vb{-z}}$ and following a similar procedure,
+
+\begin{equation*}
+    P(\vb{+x}) = \frac{1}{2}, \quad
+    P(\vb{-x}) = \frac{1}{2}
+\end{equation*}
+
+\begin{equation*}
+    \boxed{
+    \expval{S_x}=0}
+\end{equation*}
+Considering $\ket{\vb{+y}} = \frac{1}{\sqrt{2}} \ket{\vb{+z}} + \frac{i}{\sqrt{2}} \ket{\vb{-z}}$ and following a similar procedure,
+
+\begin{equation*}
+    P(\vb{+y}) = \frac{2-\sqrt{3}}{4}, \quad
+    P(\vb{-y}) = \frac{2+\sqrt{3}}{4}
+\end{equation*}
+
+\begin{equation*}
+    \boxed{
+    \expval{S_y} =-\frac{\sqrt{3}}{4} \hbar}
+\end{equation*}
+
+\section*{Problem 1.11}
+We can show that these two phases only differ by an overall phase factor by calculating their relative phase difference.\\
+Denote $\ket{\psi_1}=\frac{1}{2}e^{i\delta_+ }\ket{\vb{+z}}+\frac{\sqrt{3}}{2}e^{i\delta_-}\ket{\vb{-z}}$ and $\ket{\psi_2}=\frac{1}{2}e^{i\gamma_+ }\ket{\vb{+z}}+\frac{\sqrt{3}}{2}e^{i\gamma_-}\ket{\vb{-z}}$,
+\[
+    \delta_+ = 0, \quad \delta_- = \frac{\pi}{2}
+    \Rightarrow \delta = -\frac{\pi}{2}  
+\]
+\[
+    \gamma_+ = -\frac{\pi}{2}, \quad \gamma_- = 0
+    \Rightarrow \gamma = -\frac{\pi}{2}
+\]
+The relative phase difference $\delta=\gamma$, thus the two states are equivalent, indicating
+\begin{equation*}
+    \boxed{
+        \expval{S_z} = -\frac{\hbar}{4}, \quad
+        \expval{S_x} = 0, \quad
+        \expval{S_y} = -\frac{\sqrt{3}\hbar}{4}
+    }
+\end{equation*}
+\section*{Problem 1.12}
+Following \eqref{P1.10-orientation vector},
+\[
+    \theta= \frac{3\pi}{2}, \quad
+    \phi = 0
+\]
+thus
+\[
+    \vb{n}=
+    <\frac{\sqrt{3}}{2},0,-\frac{1}{2}>
+\]
+As $\ket{\psi}=\frac{1}{2}\pz + \frac{\sqrt{3}}{2} \nz$,
+\[
+    P(+z) = \frac{1}{4}, \quad P(-z) = \frac{3}{4}
+\] 
+\[
+    \boxed{
+    \expval{S_z} = -\frac{\hbar}{4}}
+\]
+As $\px = \pxexpr $,
+\[
+    P(+x) = \frac{2+\sqrt{3}}{4}, \quad
+    P(-x) = \frac{2-\sqrt{3}}{4}
+\]
+\[
+    \boxed{
+    \expval{S_x} = \frac{\sqrt{3}}{4}\hbar}
+\]
+As $\py = \pyexpr $,
+\[
+    P(+y) = \frac{1}{2}, \quad
+    P(+y) = \frac{1}{2}
+\]
+\[
+    \boxed{
+        \expval{S_y} = 0
+    }
+\]
+
+\section*{Problem 1.14}
+Because $P(\lambda_i) = \abs{\braket{\lambda_i}{\psi}}^2$ and in light of the overall phase irrelevency, we can write $\ket{\psi}$ as 
+\[
+    \ket{\psi} = e^{i\theta}
+    (\frac{3}{5}\pz + e^{i\phi} \frac{4}{5} \nz)
+\]
+As $\px = \pxexpr$, the probability of measuring $+x$ would be 
+\[
+    \begin{split}
+        P(+x)
+        =& \abs{\frac{3}{5\sqrt{2}}+e^{i\phi}\frac{4}{5\sqrt{2}}}^2 \\
+        =& (\frac{3}{5\sqrt{2}}+e^{i\phi}\frac{4}{5\sqrt{2}}) (\frac{3}{5\sqrt{2}}+e^{-i\phi}\frac{4}{5\sqrt{2}}) \\
+        =& \frac{1}{50} (25+12e^{i\phi}+ 12e^{-i\phi}) \\
+        =& \frac{1}{2} + \frac{24}{50} \cos{\phi}
+    \end{split}
+\]
+It is given that $P(+x)=\frac{1}{2}$, so 
+\[
+    \cos{\phi} = 0 \Rightarrow 
+    \phi = \frac{\pi}{2} \Rightarrow
+    e^{i\phi} = i
+\]
+Therefore,
+\[
+    \boxed{
+        \ket{\psi} = 
+        e^{i\theta} (\frac{3}{5} \pz + \frac{4i}{5} \nz)
+        \quad \theta \in \mathbb{R}}
+\]
+
+\section*{Problem 1.15}
+Similar to Problem 1.14, we can express
+\[
+    \ket{\psi}= e^{i\theta}
+    ()\frac{3}{\sqrt{10}} \pz + \frac{1}{\sqrt{10}}e^{i\phi}\nz)
+\]
+As $\py = \pyexpr $, the probability of measuring $+y$ would be 
+\[
+    \begin{split}
+        P(+y)
+        &= \abs{\frac{3}{\sqrt{20}}+\frac{1}{\sqrt{20}}ie^{-i\phi}}^2 \\
+        &= \frac{1}{20} (9+1-3i(e^{i\phi}-e^{-i\phi})) \\
+        &= \frac{1}{2} + \frac{3}{10} \sin{\phi}
+    \end{split}
+\]
+It is given that $P(+y) = \frac{1}{2}$, so
+\[
+    \sin{\phi} = -1 \Rightarrow
+    \phi = -\frac{\pi}{2} \Rightarrow
+    e^{i\phi} = -i
+\]
+Therefore,
+\[  
+    \boxed{
+    \ket{\psi} = 
+    e^{i\theta} (\frac{3}{\sqrt{10}} \pz - \frac{i}{\sqrt{10}} \nz)
+    \quad \theta \in \mathbb{R}
+    } 
+\]
+As $\px = \pxexpr$,
+\[
+    \boxed{
+    P(+x) = 
+    \abs{\frac{3}{\sqrt{20}}-\frac{1}{\sqrt{20}}i}^2
+    = \frac{1}{2}
+    }
+\]
+\end{document}

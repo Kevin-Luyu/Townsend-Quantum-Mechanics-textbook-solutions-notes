@@ -1,5 +1,7 @@
 # Solutions and Notes to *A Modern Approach To Quamtum Mechanics* 2nd edition by Townsend
 ## Solutions
+Each solution is contained in a separate folder named by chapters under the big folder "Solution". There are many files in each chapter folder, but most of them are most useful (working files). For my solution, see the .pdf file; for the LaTeX file, see the .tex file; other files are automatically created when compling the .tex file in VSCode and may not be useful. 
+
 This book is a popular quantum mechanics textbook. However, there are no publicly available solution manuals (they are available to instructors only). Though understanding the intent to avoid plagiarism, I find it difficult to learn this subjet without the opportunity to check my answers as a self-learner. Thankfully, I find Huang's post on https://kevinshuang.com/projects/a-modern-approach-to-quantum-mechanics/ which have solutions to the 1st edition of the textbook. However, there are additional questions in the 2nd edition and the question indexes are slightly different as a result. Therefore, I would like to share my answers to the uncovered questions and link the question index in the second edition to those in the first edition, in order to help users of the second edition textbook. If any individual or party find this repository to harm its rights, please contact me and I would make corresponding changes. 
 
 ## Notes

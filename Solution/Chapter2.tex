@@ -2,15 +2,37 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{physics}
+\usepackage{amsfonts} % enable the use of \mathbb
+\usepackage{siunitx} 
 
-\title{Chapter 1}
+\title{Chapter 2}
+\date{March 11, 2021}
 \author{Yu Lu}
 \begin{document}
+% define commands for special state vectors, p means positive, n means negative
+\newcommand{\pz}{\ket{\vb{+z}}}
+\newcommand{\nz}{\ket{\vb{-z}}}
+\newcommand{\px}{\ket{\vb{+x}}}
+\newcommand{\nx}{\ket{\vb{-x}}}
+\newcommand{\py}{\ket{\vb{+y}}}
+\newcommand{\ny}{\ket{\vb{-y}}}
+
+% writes expression of |+x> etc. in |z> basis
+\newcommand{\pxexpr}{ \frac{1}{\sqrt{2}} \pz + \frac{1}{\sqrt{2}} \nz}
+\newcommand{\nxexpr}{ \frac{1}{\sqrt{2}} \pz - \frac{1}{\sqrt{2}} \nz}
+\newcommand{\pyexpr}{ \frac{1}{\sqrt{2}} \pz + \frac{i}{\sqrt{2}} \nz}
+\newcommand{\nyexpr}{ \frac{1}{\sqrt{2}} \pz - \frac{i}{\sqrt{2}} \nz}
+\newcommand{\rot}[1]{\hat{R}(\phi \hat{#1})} % rotational operator
+\newcommand{\rott}[2]{\hat{R}(#1 \hat{#2})} % rotational operator with argumentative angle
+\newcommand{\sm}[4]{\pmqty{\braket{#1}{#3}& \braket{#1}{#4} \\ \braket{#2}{#3} & \braket{#2}{#4}}} %similarity matrix, new basis #1 and #2; original basis #3 and #4
+\newcommand{\basexp}[1]{\xrightarrow{\ket{#1}}} % expressed in 1 basis
     \maketitle
-    The two tables below shows correspondence of question index in 2nd Edition of the textbook and that in 1st Edition of the textbook. 
+    The three tables below shows correspondence of question index in 2nd Edition of the textbook and that in 1st Edition of the textbook. For Problem 2.6, I think my solution is slightly shorter and easier. For Problem 2.14 and 2.15, I believe there are some mistakes in Huang's solution (when transferring basis), so I attach my solution here as well. Problem 2.21 and 2.22, though are included in the 1st Edition as well, are skipped in Huang's solution. Part (b) in Problem 2.23 is not included in 1st Edition. 
+    
+    Note that my definition of similarity matrix transferring basis $\ket{\phi}$ to basis $\ket{\chi}$ is $S_{ij}=\braket{\chi_i}{\phi_j}$, which is the definition of adjoint of similarity matrix in the textbook and Huang's solution. I am a bit uncertain about my solution to Problem 2.21 and 2.22.
 \begin{table}[h!]
     \begin{center}
-      \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c} 
+      \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c} 
         \hline
         2nd Edition
         &2.1
@@ -23,8 +45,6 @@
         &2.8
         &2.9
         &2.10
-        &2.11
-        &2.12
         \\ \hline
         1st Edition
         &2.1
@@ -37,33 +57,15 @@
         &
         &
         &
-        &
-        &2.8
         \\ \hline
       \end{tabular}
     \end{center}
 \end{table}
 \begin{table}[h!]
     \begin{center}
-      \begin{tabular}{l|c|c|c|c|c|c|c|c|c|c|c|c} 
+      \begin{tabular}{l|c|c|c|c|c|c|c|c|c} 
         \hline
         2nd Edition
-        &2.13
-        &2.14
-        &2.15
-        &2.16
-        &2.17
-        &2.18
-        &2.19
-        &2.20
-        &2.21
-        &2.22
-        &2.23
-        &2.24
-        \\ \hline
-        1st Edition
-        &2.9
-        &2.10
         &2.11
         &2.12
         &2.13
@@ -73,9 +75,327 @@
         &2.17
         &2.18
         &2.19
-        &
+        \\ \hline
+        1st Edition
+        &        
+        &2.8
+        &2.9
+        &2.10
+        &2.11
+        &2.12
+        &2.13
+        &2.14
+        &2.15
         \\ \hline
       \end{tabular}
     \end{center}
   \end{table}
+
+\begin{table}[h!]
+  \begin{center}
+    \begin{tabular}{l|c|c|c|c|c}
+      \hline
+      2nd Edition
+      &2.20
+      &2.21
+      &2.22
+      &2.23
+      &2.24
+      \\ \hline
+      1st Edition
+      &2.16
+      &2.17
+      &2.18
+      &2.19
+      &
+    \end{tabular}
+  \end{center}
+\end{table}
+\section*{Problem 2.6}
+Because $\hat{J_y}\ket{\pm \vb{y}} = \pm \frac{\hbar}{2} \ket{\pm \vb{y}}$ and $\hat{R}(\hat{j}\phi)=e^{-i\hat{J_y}\phi/\hbar}$, 
+\begin{align*}
+  \hat{R}(\hat{j}\phi) \py &= e^{-i \phi/2} \py \\
+  \hat{R}(\hat{j}\phi) \ny &= e^{i \phi/2} \ny
+\end{align*}
+Therefore, in $\ket{\vb{y}}$ basis, $\hat{R}(\phi \hat{j})$ can be expressed as
+\begin{equation}
+  \rot{j} \xrightarrow{\ket{y}} \pmqty{e^{-i \phi /2 }& 0 \\ 0 & e^{i \phi/2}}
+\end{equation}
+As $\py = \pyexpr$, $\ny = \nyexpr$, the similarity matrix transferring $\ket{y}$ basis to $\ket{z}$ basis is 
+\begin{equation} \nonumber
+  \begin{split}
+    \mathbb{S} &= \sm{+z}{-z}{+y}{-y} \\
+    &= \frac{1}{\sqrt{2}}\pmqty{1 & 1 \\ i & -i}
+  \end{split}
+\end{equation}
+Therefore,
+\begin{equation*}
+\begin{split}
+\rot{j} &\xrightarrow{\ket{z}}
+\mathbb{S} \rot{j}^{y} \mathbb{S}^{\dagger} \\
+&= \frac{1}{2} \pmqty{1 & 1 \\ i & -i} \pmqty{e^{-i \phi /2 }& 0 \\ 0 & e^{i \phi/2}} \pmqty{1 & -i \\ 1 & i} \\
+&= \pmqty{\cos(\theta/2) & -\sin(\theta/2) \\ \sin(\theta/2) & \cos(\theta/2)}
+\end{split}
+\end{equation*}
+\[
+  \rott{\frac{\pi}{2}}{j} \xrightarrow{\ket{z}} 
+  \frac{1}{\sqrt{2}} \pmqty{1 & -1 \\ 1 & 1}
+\]
+Therefore,
+\[
+  \begin{split}
+    \rott{\frac{\pi}{2}}{j} \pz \xrightarrow{\ket{z}}&
+    \frac{1}{\sqrt{2}} \pmqty{1 & -1 \\ 1 & 1} \pmqty{1 \\ 0} \\
+    =&\frac{1}{\sqrt{2}}  \pmqty{1 \\ 1} \\
+    =&\px^{z}
+  \end{split}
+\]
+
+\section*{Problem 2.8}
+As $\ket{\psi} \xrightarrow{\ket{z}} \frac{1}{\sqrt{5}} \spmqty{i \\ 2}$, $\bra{\psi} \xrightarrow{\ket{z}} \frac{1}{\sqrt{5}}\pmqty{-i & 2}$. Hence
+\[
+  \braket{\psi} = \frac{1}{5} (5) = 1
+\]
+and $\ket{\psi}$ is normalized. \\
+As $\px \basexp{z} \frac{1}{\sqrt{2}} \spmqty{1 \\ 1}$, 
+\[
+  \begin{split}
+    P(+x) &= \abs{\braket{\psi}{\vb{+x}}}^2 \\
+    &= \frac{1}{10} \abs{\pmqty{-1 & 2}\pmqty{1 \\ 1}}^2 \\
+    &= \frac{1}{10} \abs{2-i}^2 
+  \end{split}
+\]
+\[
+  \boxed{
+    P(+x) = \frac{1}{2}
+  }  
+\]
+Similarly, as $\py \basexp{z} \frac{1}{\sqrt{2}} \spmqty{1 \\ i}$, 
+\[
+  \boxed{
+    P(+y) = \abs{\braket{\psi}{+y}}^2 =\abs{\frac{1}{\sqrt{10}}\pmqty{-1 & 2} \pmqty{1 \\ i}}^2= \frac{1}{10}
+  }
+\]
+\section*{Problem 2.9}
+Skipped 
+\section*{Problem 2.10}
+\[ 
+  \hat{J_z} \xrightarrow{\ket{x}}
+  \frac{\hbar}{2} \pmqty{1 & 0 \\ 0 & -1}
+\]
+Similarity matrix transferring $\px$ basis to $\pz$ basis is 
+\[ 
+  \begin{split}
+    \mathbb{S} &= \sm{+z}{-z}{+x}{-x} \\
+    &= \frac{1 }{\sqrt{2}} \pmqty{1 & 1 \\ 1 & -1} = \mathbb{S}^{\dagger}
+  \end{split}
+\]
+Therefore,
+\[ 
+  \begin{split}
+    \hat{J_x} &\basexp{z} 
+    \frac{\hbar}{4} \pmqty{1 & 1 \\ 1 & -1} \pmqty{1 & 0 \\ 0 & -1} \pmqty{1 & 1 \\ 1 & -1}\\
+    &= \frac{\hbar}{4} \pmqty{1 & -1 \\ 1 & 1} \pmqty{1 & 1 \\ 1 & -1} \\
+    &= \frac{\hbar}{2} \pmqty{0 & 1 \\ 1 & 0}
+  \end{split}
+\]
+\[ 
+  \boxed{
+    \hat{J_x} \basexp{z} \frac{\hbar}{2} \pmqty{0 & 1 \\ 1 & 0}
+  }
+\]
+\section*{Problem 2.11}
+According to Problem 2.10, 
+\[
+  \hat{J_x} \basexp{z} \frac{\hbar}{2} \pmqty{0 & 1 \\ 1 & 0}
+\]
+Therefore, 
+\[ 
+  \begin{split}
+    \expval{S_x} &= \expval{S_x}{\hat{J_x}} \\
+    &= \frac{\hbar}{6} \pmqty{1 & \sqrt{2}} \pmqty{\admat[0]{1, 1}} \pmqty{1 \\ \sqrt{2}} \\
+    &= \frac{\hbar}{6} \pmqty{1 & \sqrt{2}} \pmqty{\sqrt{2} \\ 1} \\
+    &= \frac{\sqrt{2}}{3} \hbar 
+  \end{split}  
+\]
+\[ 
+  \boxed{
+    \expval{S_x} = \frac{\sqrt{2}}{3} \hbar 
+  }
+\]
+
+\section*{Problem 2.14}
+\subsection*{Part A}
+\begin{align*}
+  \ket{R} &= \frac{1}{\sqrt{2}} \ket{x} + \frac{i}{\sqrt{2}} \ket{y} \\
+  \ket{L} &= \frac{1}{\sqrt{2}} \ket{x} - \frac{i}{\sqrt{2}} \ket{y}
+\end{align*}
+The similarity matrix transferring $x-y$ basis to $R-L$ basis is 
+\[ 
+  \begin{split}
+    \mathbb{S} &= \sm{R}{L}{x}{y} \\
+  &= \frac{1}{\sqrt{2}} \pmqty{1 & -i \\ 1 & i}
+  \end{split}
+\]
+\subsection*{Part B}
+From Part A,
+\[ 
+  \mathbb{S}^{\dagger} = \frac{1}{\sqrt{2}} \pmqty{1 & 1 \\ i & -i} 
+\]
+\[ 
+  \begin{split}
+  \mathbb{S} \mathbb{S}^{\dagger} 
+  &= \frac{1}{2} \pmqty{1 & -i \\ 1 & i} \pmqty{1 & 1 \\ i & -i}\\
+  &= \frac{1}{2} \pmqty{\dmat[0]{2,2}} \\
+  &= \mathbb{I}
+  \end{split}
+\]
+Therefore, $\mathbb{S}$ is unitary. 
+
+\section*{Problem 2.15}
+By Problem 2.14, $\mathbb{S} = \frac{1}{\sqrt{2}} \spmqty{1 & -i \\ 1 & i}$. Therefore,
+\begin{align*}
+  \begin{split}
+    \ket{x} &\xrightarrow{R, L} \frac{1}{\sqrt{2}} \pmqty{1 & -i \\ 1 & i} \pmqty{1 \\ 0} \\
+    &= \frac{1}{\sqrt{2}} \pmqty{1 \\ 1} 
+  \end{split}
+  \Rightarrow \bra{x} = \frac{1}{\sqrt{2}} \pmqty{1 & 1} \\
+  \begin{split}
+    \ket{y} &\xrightarrow{R, L} \frac{1}{\sqrt{2}} \pmqty{1 & -i \\ 1 & i} \pmqty{0 \\ 1} \\
+    &= \frac{1}{\sqrt{2}} \pmqty{-i \\ i} 
+  \end{split}
+  \Rightarrow \bra{y} = \frac{1}{\sqrt{2}} \pmqty{i & -i}
+\end{align*}
+Because
+\[ 
+  \begin{cases}
+    \hat{J_z} \ket{R} &= \hbar \ket{R} \\
+    \hat{J_z} \ket{L} &= -\hbar \ket{L}
+  \end{cases}
+  \Rightarrow \hat{J_z} \xrightarrow{\ket{R, L}} \hbar \pmqty{1 & 0 \\ 0 & -1}
+\]
+we have 
+\[ 
+  \begin{cases}
+    \hat{J_z} \ket{x} &= \frac{\hbar}{\sqrt{2}} \pmqty{1 \\ -1} \\
+    \hat{J_z} \ket{y} &= -\frac{i\hbar}{\sqrt{2}} \pmqty{1 \\ 1}
+  \end{cases}
+\]
+Therefore,
+\[ 
+  \begin{split}
+    &\pmqty{\mel{x}{\hat{J_z}}{x} & \mel{x}{\hat{J_z}}{y} \\ \mel{y}{\hat{J_z}}{x} & \mel{y}{\hat{J_z}}{y}} \\
+    =& \frac{\hbar}{2} \pmqty{\pmqty{1 & 1}\pmqty{1 \\ -1} & \pmqty{1 & 1} \pmqty{-i \\ -i} \\ \pmqty{i & -i}\pmqty{1 \\ -1} & \pmqty{i & -i}\pmqty{-i \\ -i}} \\
+    =& i\hbar \pmqty{\admat[0]{-1, 1}}
+  \end{split}
+\]
+\[ 
+  \boxed{
+    \pmqty{\mel{x}{\hat{J_z}}{x} & \mel{x}{\hat{J_z}}{y} \\ \mel{y}{\hat{J_z}}{x} & \mel{y}{\hat{J_z}}{y}} = i\hbar \pmqty{\admat[0]{-1, 1}}
+  }
+\]
+
+\section*{Problem 2.21}
+According to Page 63 of the textbook, a photon would have a phase difference $\phi_y - \phi_x$ 
+\[ 
+  \Delta \phi = \frac{(n_y-n_x)\omega}{c} z = \frac{(n_y-n_x)2\pi}{\lambda} z
+\]
+between $\ket{x}$ component and $\ket{y}$ component of the polarization state after travelling a distance $z$. As the incident light is polarized $\ang{45}$, the original polarization state is $\ket{\psi_0}=\frac{1}{\sqrt{2}}(\ket{x}+\ket{y})$ Thus, the new polarization state can be expressed as
+\[
+  \ket{\psi} = \frac{1}{\sqrt{2}} (\ket{x}+e^{i\Delta \phi}\ket{y}) \xrightarrow{\ket{x, y}}
+  \frac{1}{\sqrt{2}} \pmqty{1 \\ e^{i \Delta \phi}}
+\]
+$\ket{R} \xrightarrow{\ket{x, y}} \frac{1}{\sqrt{2}} \spmqty{1 \\ i}$.
+Therefore the probability of measuring $\ket{R}$ is 
+\[ 
+  \begin{split}
+  P(\ket{R}) &= \abs{\braket{\psi}{R}}^2 \\
+  &= \abs{\frac{1}{2}\pmqty{1 & e^{i \Delta \phi}} \pmqty{1 \\ i}}^2 \\
+  &= \frac{1}{4} (2+ie^{-i\Delta \phi}-ie^{i \Delta \phi}) \\
+  &= \frac{1}{2} (1+\sin(\Delta \phi)) \\
+  &= \frac{1}{2} (1+\sin(\frac{(n_y-n_x)2\pi}{\lambda} z))
+  \end{split}
+\] 
+Plugging in $n_y = 1.66$, $n_x = 1.49$, $\lambda = \num{5890e-10}\si{m}$, and $z=\num{100e-9}\si{m}$, we have
+\[ 
+  \boxed{
+    P(\ket{R}) \approx 0.11975
+  }
+\]
+
+\section*{Problem 2.22}
+As the light is incident on a quarter-wave plate, its $\ket{y}$ polarization will pick up a phase factor of $i$, becoming
+\[ 
+  \begin{split}
+    \ket{\psi} &= \cos(\ang{30}) \ket{x} + i \sin(\ang{30}) \ket{y}
+    \xrightarrow{\ket{x, y}} \frac{1}{2} \pmqty{\sqrt{3} \\ i}
+  \end{split}
+\]
+In problem 2.15, we have shown that
+\[ 
+  \hat{J_z} \xrightarrow{\ket{x, y}} i\hbar \pmqty{\admat[0]{-1, 1}}
+\]
+Thus, 
+\[ 
+  \begin{split}
+    \expval{L} &= \ev{\hat{J_z}}{\psi} \\
+    &= \frac{1}{2} \pmqty{\sqrt{3} & -i} i\hbar \pmqty{\admat[0]{-1, 1}} \frac{1}{2} \pmqty{\sqrt{3} \\ i} \\
+    &= \frac{\sqrt{3}}{2} \hbar
+  \end{split}
+\]
+\[
+  \boxed{
+    \abs{\dv{\expval{L}}{t}} = \frac{\sqrt{3}}{2} \hbar N
+  }
+\]
+\section*{Problem 2.23}
+\subsection*{Part B}
+Suppose unitary operator $U$ has eigenvalues $\lambda_i$ and eigenstates $\ket{\lambda_i}$ satisfying
+\begin{equation}
+  \label{eigenvalues}
+  U\ket{\lambda_i} = \lambda_i \ket{\lambda_i}
+  \Longleftrightarrow 
+  \bra{\lambda_i}U^\dagger = \bra{\lambda_i}\lambda_i^*
+\end{equation}
+By the definition of unitary operator, 
+\[ 
+  \expval{U^\dagger U}{\lambda_i} = \ip{\lambda_i}{\lambda_i}
+\]
+By Eq.\eqref{eigenvalues},
+\[ 
+  \expval{U^\dagger U}{\lambda_i} = \expval{\lambda_i \lambda_i^*}{\lambda_i}
+\]
+Therefore,
+\[
+  \lambda_i\lambda_i^*=1 \Longleftrightarrow
+  \abs{\lambda_i} =1 \Longleftrightarrow
+  \lambda_i \equiv e^{i\theta}
+\]
+
+\section*{Problem 2.24}
+$\ket{a_1}$ and $\ket{a_2}$ form a complete set of basis vector, so we can write any state vector $\ket{\psi}$ as $\ket{\psi} = \ket{a_1}\ip{a_1}{\psi}+\ket{a_2}\ip{a_2}{\psi}$. Then,
+\[ 
+  \begin{split}
+    \hat{A}\ket{\psi} 
+    &= \hat{A} (\ket{a_1}\ip{a_1}{\psi}+\ket{a_2}\ip{a_2}{\psi}) \\
+    &= (a_1 \dyad{a_1} + a_2 \dyad{a_2}) \ket{\psi}
+  \end{split}
+\]
+\[ 
+   \hat{A} = a_1 \dyad{a_1} + a_2 \dyad{a_2}
+\]
+Hence,
+\[ 
+  \begin{split}
+    \expval{\hat{A}}{\psi}
+    =& \ev{a_1 \dyad{a_1}}{\psi} + \ev{a_2 \dyad{a_2}}{\psi} \\
+    =& a_1 \abs{\ip{a_1}{\psi}}^2 + a_2 \abs{\ip{a_2}{\psi}}^2 \\
+    =& \expval{A}
+  \end{split}
+\]
+\[ 
+  \boxed{
+    \expval{\hat{A}}{\psi} = \expval{A}
+  }
+\]
 \end{document}

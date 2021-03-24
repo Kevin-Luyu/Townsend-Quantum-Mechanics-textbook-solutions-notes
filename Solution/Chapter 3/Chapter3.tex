@@ -1,0 +1,302 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{amsfonts} % enable the use of \mathbb
+
+\title{Chapter 3}
+\date{March 24, 2021}
+\author{Yu Lu}
+
+\begin{document}
+\newcommand{\rot}[1]{\hat{R}(\phi \hat{#1})} % rotational operator
+\newcommand{\rott}[2]{\hat{R}(#1 \hat{#2})} % rotational operator with argumentative angle
+
+\maketitle
+Suggested problems for reviewing: P3.2, P3.5, P3.6, P3.14, P3.17, P3.20. 
+
+For chapter 3, problems in the 2nd edition are exactly the same as those in the 1st edition until Problem 3.21. The table below shows the correspondence of other problem indexes in the 2nd edition to those in the 1st edition. 
+
+\begin{table}[h!]
+    \begin{center}
+      \begin{tabular}{l|c|c|c|c|c|c} 
+        \hline
+        2nd Edition
+        &3.22
+        &3.23
+        &3.24
+        &3.25
+        &3.26
+        &3.27
+        \\ \hline
+        1st Edition
+        &        
+        &
+        &
+        &
+        &3.22
+        &
+        \\ \hline
+      \end{tabular}
+    \end{center}
+\end{table}
+
+\section*{Problem 3.22}
+For $s=\frac{3}{2}$, $m$ can take value of $\frac{3}{2}$, $\frac{1}{2}$, $-\frac{1}{2}$, and $-\frac{3}{2}$, and the eigenvalue problem becomes
+\[ 
+    \begin{cases}
+        \hat{S}^2 \ket{s,m} &= s(s+1) \hbar^2 \ket{s,m} \\
+        \hat{S}_z \ket{s,m} &= m \hbar \ket{s,m}
+    \end{cases}
+\]
+As $\hat{J}_+ \ket{s,m} = \sqrt{s(s+1)-m(m+1)} \hbar \ket{s,m+1}$, we have
+\[
+    \begin{cases}
+        \hat{J}_+ \ket{\frac{3}{2}, \frac{3}{2}}
+        = 0 \\
+        \hat{J}_+ \ket{\frac{3}{2}, \frac{1}{2}}
+        = \sqrt{3} \hbar \ket{\frac{3}{2}, \frac{3}{2}} \\
+        \hat{J}_+ \ket{\frac{3}{2}, -\frac{1}{2}}
+        = 2 \hbar \ket{\frac{3}{2}, \frac{1}{2}} \\
+        \hat{J}_+ \ket{\frac{3}{2}, -\frac{3}{2}}
+        = \sqrt{3} \hbar \ket{\frac{3}{2}, -\frac{1}{2}} \\
+    \end{cases}
+\] 
+Therefore,
+\[
+    \hat{J}_+ \xrightarrow{J_z}
+    \hbar \pmqty{\mqty{0\\0\\0} & \mqty{\dmat[0]{\sqrt{3},2,\sqrt{3}}}\\ 0 & \mqty{0&0&0}}
+\] 
+\[
+    \hat{J}_- = \hat{J}_+^\dagger \xrightarrow{J_z}
+    \hbar \pmqty{\mqty{0 & 0 & 0} & \mqty{0} \\ \mqty{\dmat[0]{\sqrt{3}, 2, \sqrt{3}}} & \mqty{0 \\ 0 \\ 0}} 
+\]
+\[
+  \begin{split}
+      \hat{J}_x &= \frac{1}{2} (\hat{J}_+ + \hat{J}_-) \\
+      &\xrightarrow{J_z}
+      \frac{\hbar}{2} \pmqty{0 & \sqrt{3} & 0 & 0 \\ \sqrt{3} & 0 & 2 & 0 \\ 0 & 2 & 0 & \sqrt{3} \\ 0 & 0 & \sqrt{3} & 0}
+  \end{split}  
+\]
+In order to find representation of $\ket{\frac{3}{2}, \frac{1}{2}}$, we consider the eigenvalue problem
+\[
+    \hat{J}_x \ket{\frac{3}{2}, \frac{1}{2}}
+    =\frac{\hbar}{2} \ket{\frac{3}{2}, \frac{1}{2}}
+\]
+\[
+    \pmqty{-1 & \sqrt{3} & 0 & 0 \\ \sqrt{3} & -1 & 2 & 0 \\ 0 & 2 & -1 & \sqrt{3} \\ 0 & 0 & \sqrt{3} & -1} 
+    \pmqty{a \\ b \\ c \\ d} = \vb{0}
+    \Leftrightarrow 
+    \begin{cases}
+        a - \sqrt{3} b &=0\\
+        \sqrt{3}a -b+2c &=0 \\
+        \sqrt{3}c-d&=0
+    \end{cases}
+\]
+\[
+    \begin{cases}
+        a&=\sqrt{3}b \\
+        c&=-b\\
+        d&=-\sqrt{3}b
+    \end{cases}
+    \Leftrightarrow
+    \ket{\frac{3}{2},\frac{1}{2}} \xrightarrow{J_z}
+    b\pmqty{\sqrt{3} \\ 1 \\ -1 \\ -\sqrt{3} }
+\]
+By the normalization condition, $b=\frac{1}{2\sqrt{2}}$. Therefore
+\[
+    \ket{\frac{3}{2}, \frac{1}{2}}_x = 
+    \frac{\sqrt{3}}{2\sqrt{2}} \ket{\frac{3}{2}, \frac{3}{2}} +
+    \frac{1}{2\sqrt{2}} \ket{\frac{3}{2}, \frac{1}{2}} -
+    \frac{1}{2\sqrt{2}} \ket{\frac{3}{2}, -\frac{1}{2}} -
+    \frac{\sqrt{3}}{2\sqrt{2}} \ket{\frac{3}{2}, -\frac{3}{2}} 
+\]
+\[
+    \boxed{
+        P(\frac{3\hbar}{2}) = \frac{3}{8} \quad
+        P(\frac{\hbar}{2}) = \frac{1}{8} \quad
+        P(-\frac{\hbar}{2}) = \frac{1}{8} \quad
+        P(-\frac{3\hbar}{2}) = \frac{3}{8} 
+    }
+\]
+\section*{Problem 3.23}
+Taking
+\[
+    \ket{\frac{3}{2}, \frac{3}{2}}_x \xrightarrow{J_z}
+    \frac{1}{2\sqrt{2}} \pmqty{1\\ \sqrt{3} \\ \sqrt{3}\\1},
+\]
+acting $\hat{S}_x$ on it yields
+\[
+    \begin{split}
+        \hat{S}_x \ket{\frac{3}{2}, \frac{3}{2}}_x &\xrightarrow{S_z}
+        \frac{\hbar}{4\sqrt{2}} \pmqty{0&\sqrt{3}& & \\ \sqrt{3} & 0 & 2 & \\ & 2&0&\sqrt{3}\\ & & \sqrt{3} & 0}\pmqty{1\\ \sqrt{3} \\ \sqrt{3} \\1} \\
+        &= \frac{\hbar}{4\sqrt{2}} \pmqty{3 \\ 3\sqrt{3} \\ 3\sqrt{3}\\3} \\
+        &= \frac{1}{2\sqrt{2}} \frac{3\hbar}{2} \pmqty{1 \\ \sqrt{3} \\ \sqrt{3} \\ 1}
+    \end{split}
+\]
+This verifies that 
+\[
+    \hat{S}_x \ket{\frac{3}{2}, \frac{3}{2}}_x  = \frac{3\hbar}{2} \ket{\frac{3}{2}, \frac{3}{2}}_x
+\]
+Things that can be noticed:\\
+1. The states are orthonormal \\
+2. The states are symmetric and only takes value of $\pm \sqrt{3}$ and $\pm 1$.
+
+\section*{Problem 3.24}
+\subsection*{Part A}
+As $\bra{\psi} \xrightarrow{S_z} N^*\pmqty{-i&2&3&-4i}$,
+\[
+    \braket{\psi} = \abs{N}^2(1+4+9+16) = 30\abs{N}^2
+\]
+\[\boxed{
+    \braket{\psi} = 1
+    \Leftrightarrow
+    N = \frac{1}{\sqrt{30}}}
+\]
+\subsection*{Part B}
+According to Example 3.4,
+\[
+    \hat{J}_x 
+    \xrightarrow{J_z}
+    \frac{\hbar}{2} \pmqty{0 & \sqrt{3} & 0 & 0 \\ \sqrt{3} & 0 & 2 & 0 \\ 0 & 2 & 0 & \sqrt{3} \\ 0 & 0 & \sqrt{3} & 0}
+\]
+\[
+    \begin{split}
+        \expval{\hat{S}_X}
+        &= \expval{\hat{S}_X}{\psi} \\
+        &\xrightarrow{S_z}
+        \frac{\hbar}{60} \pmqty{-i&2&3&-4i} 
+        \pmqty{0 & \sqrt{3} & 0 & 0 \\ \sqrt{3} & 0 & 2 & 0 \\ 0 & 2 & 0 & \sqrt{3} \\ 0 & 0 & \sqrt{3} & 0}
+        \pmqty{i \\ 2 \\3 \\4i} \\
+        &= \frac{\hbar}{60} \pmqty{-i&2&3&-4i}  
+        \pmqty{2\sqrt{3} \\ 6+\sqrt{3}i \\ 4+4\sqrt{3}i \\ 3\sqrt{3}} \\
+        &= \frac{2\hbar}{5}
+    \end{split}
+\]
+\[
+    \boxed{
+        \expval{\hat{S}_X}= \frac{2\hbar}{5}
+    }
+\]
+\subsection*{Part C}
+From Problem 3.23, $\bra{\frac{3}{2}, \frac{1}{2}}_x =\frac{1}{2\sqrt{2}}\pmqty{\sqrt{3}&1&-1&-\sqrt{3}}$, thus
+\[
+    \begin{split}
+        P(\frac{\hbar}{2}) &=
+        \abs{\braket{\frac{3}{2},\frac{1}{2}}{\psi}}^2 \\
+        &\xrightarrow{S_z}
+        \abs{\frac{1}{2\sqrt{2}}\pmqty{\sqrt{3}&1&-1&-\sqrt{3}}\frac{1}{\sqrt{30}}\pmqty{i\\2\\3\\4i}}^2 \\
+        &=\frac{1}{240} \abs{-1-3\sqrt{3}i}^2 \\
+        &=\frac{7}{60}
+    \end{split}
+\]
+\[
+    \boxed{P(\frac{\hbar}{2})=\frac{7}{60}}
+\]
+\section*{Problem 3.25}
+\subsection*{Part A}
+From Problem 3.22,
+\[
+    \hat{S}_+ \xrightarrow{S_z}
+    \hbar \pmqty{\mqty{0\\0\\0} & \mqty{\dmat[0]{\sqrt{3},2,\sqrt{3}}}\\ 0 & \mqty{0&0&0}}
+    \quad
+    \hat{S}_- \xrightarrow{S_z}
+    \hbar \pmqty{\mqty{0 & 0 & 0} & \mqty{0} \\ \mqty{\dmat[0]{\sqrt{3}, 2, \sqrt{3}}} & \mqty{0 \\ 0 \\ 0}}.
+\]
+Then 
+\[
+    \begin{split}
+        \hat{S}_y &=\frac{1}{2i}(\hat{S}_+-\hat{S}_-) \\
+        &\xrightarrow{S_z}
+        -\frac{i\hbar}{2} 
+        \pmqty{0 & \sqrt{3} & 0 & 0 \\ -\sqrt{3} & 0 & 2 & 0 \\ 0 & -2 & 0 & \sqrt{3} \\ 0 & 0 & -\sqrt{3} & 0}\\
+        &=\frac{\hbar}{2}
+        \pmqty{0 & -\sqrt{3}i & 0 & 0 \\ \sqrt{3}i & 0 & -2i & 0 \\ 0 & 2i & 0 & -\sqrt{3}i \\ 0 & 0 & \sqrt{3}i & 0}.
+    \end{split}
+\]
+\subsection*{Part B}
+Using matrix representation of $\hat{S}_y$ in $S_z$ basis, the eigenvalue problem becomes
+\[
+    \pmqty{0 & -\sqrt{3}i &  &  \\ \sqrt{3}i & 0 & -2i &  \\  & 2i & 0 & -\sqrt{3}i \\  &  & \sqrt{3}i & 0}
+    \pmqty{a\\b\\c\\d} = \vb{0}
+    \Leftrightarrow
+    \begin{cases}
+        3a+\sqrt{3}ib&=0 \\
+        \sqrt{3}ia-3b-2ic&=0 \\
+        \sqrt{3}ic-3d&=0
+    \end{cases}
+    .
+\]
+Solving for the system gives
+\begin{align*}
+    a&=-\frac{1}{\sqrt{3}}ib \\
+    -2b-2ic&=0 \Leftrightarrow c=ib \\
+    d&=-\frac{1}{\sqrt{3}}ic =-\frac{1}{\sqrt{3}}b,
+\end{align*}
+thus 
+\[
+    \ket{\frac{3}{2}, \frac{3}{2}}_y
+    \xrightarrow{S_z}
+    b\pmqty{-\frac{1}{\sqrt{3}}i \\ 1\\i\\ -\frac{1}{\sqrt{3}}}.
+\]
+Normalization condition gives 
+\[
+    \frac{8}{3}\abs{b}^2 =1 \Rightarrow
+    b=\frac{\sqrt{3}}{2\sqrt{2}},
+\]
+thus
+\[
+    \boxed{
+    \ket{\frac{3}{2}, \frac{3}{2}}_y
+    =-\frac{1}{2\sqrt{2}}i\ket{\frac{3}{2}, \frac{3}{2}}_z + 
+    \frac{\sqrt{3}}{2\sqrt{2}}\ket{\frac{3}{2}, \frac{1}{2}}_z
+    +\frac{\sqrt{3}}{2\sqrt{2}}i\ket{\frac{3}{2}, -\frac{1}{2}}_z
+    -\frac{1}{2\sqrt{2}}\ket{\frac{3}{2}, -\frac{3}{2}}_z.}
+\]
+\subsection*{Part C}
+From Part B, we can compute
+\[
+    P(\pm \frac{3\hbar}{2}) = \frac{1}{8}, \quad
+    P(\pm \frac{\hbar}{2}) = \frac{3}{8}.
+\]
+\section*{Problem 3.27}
+Comparing the series expansion of $e^{\hat{A}+\hat{B}}$ and $e^{\hat{A}} e^{\hat{B}}$
+\begin{align*}
+    e^{\hat{A}+\hat{B}}
+    &=
+    \sum_{i=0}^\infty \frac{1}{i!} (\hat{A}+\hat{B})^i \\
+    e^{\hat{A}} e^{\hat{B}}
+    &=
+    (\sum_{i=0}^\infty \frac{1}{i!} \hat{A}^i)(\sum_{j=0}^\infty \frac{1}{j!} \hat{B}^j),
+\end{align*}
+we see that there are terms like $\hat{A}\hat{B}\hat{A}$ in the expansion of $e^{\hat{A}+\hat{B}}$ that cannot be found in the expansion of $e^{\hat{A}} e^{\hat{B}}$. Therefore, if $\hat{A}$ and $\hat{B}$ do not commute, $e^{\hat{A}+\hat{B}}$ and $e^{\hat{A}} e^{\hat{B}}$ are not generally equal. \\
+If $\hat{A}$ and $\hat{B}$ do commute, then  $e^{\hat{A}+\hat{B}}$ and $e^{\hat{A}} e^{\hat{B}}$ are equal, which can be proved by Cauchy product outlined below
+\[
+    (\sum_{i=0}^\infty a_i)(\sum_{j=0}^\infty b_j)
+    =\sum_{i=0}^{\infty}\sum_{j=0}^{i} \frac{1}{j!(i-j)!}a_jb_{i-j},
+\]
+assuming the two series converge absolutely.\\
+Therefore, $e^{\hat{A}} e^{\hat{B}}$ can be written as
+\[
+    (\sum_{i=0}^\infty \frac{1}{i!} \hat{A}^i)(\sum_{j=0}^\infty \frac{1}{j!} \hat{B}^j)
+    =
+    \sum_{i=0}^{\infty}\sum_{j=0}^{i} \frac{1}{j!(i-j)!}\hat{A}^j\hat{B}^{i-j}.
+\]
+Series expansion of $e^{\hat{A}+\hat{B}}$ can be further simplified using binomial expansion
+\[
+    \begin{split}
+        \sum_{i=0}^\infty \frac{1}{i!} (\hat{A}+\hat{B})^i 
+        &=  \sum_{i=0}^\infty \frac{1}{i!}\sum_{j=0}^i \binom{i}{j} \hat{A}^j \hat{B}^{i-j} \\
+        &=  \sum_{i=0}^\infty \frac{1}{i!}\sum_{j=0}^i \frac{i!}{j!(i-j)!} \hat{A}^j \hat{B}^{i-j} \\
+        &= \sum_{i=0}^{\infty}\sum_{j=0}^{i} \frac{1}{j!(i-j)!}\hat{A}^j\hat{B}^{i-j}.
+    \end{split}  
+\]
+Therefore,
+\[
+    (\sum_{i=0}^\infty \frac{1}{i!} \hat{A}^i)(\sum_{j=0}^\infty \frac{1}{j!} \hat{B}^j)
+    = \sum_{i=0}^\infty \frac{1}{i!} (\hat{A}+\hat{B})^i
+\]
+\[
+    e^{\hat{A}} e^{\hat{B}} = e^{\hat{A}+\hat{B}}.
+\]
+\end{document}

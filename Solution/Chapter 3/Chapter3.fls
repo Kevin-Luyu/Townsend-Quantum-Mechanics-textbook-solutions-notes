@@ -1,0 +1,105 @@
+PWD c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.tex
+OUTPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.log
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/physics/physics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/nul:
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/nul:.tex
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux
+OUTPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+OUTPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

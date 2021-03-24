@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.7.2)  11 MAR 2021 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.7.2)  24 MAR 2021 10:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter2.tex"
-(c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter2.tex
+**"c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.tex"
+(c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.tex
 LaTeX2e <2018-12-01>
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -250,67 +250,8 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-) (c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
- (c:/texlive/2019/texmf-dist/tex/latex/tools/array.sty
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen144
-\ar@mcellbox=\box47
-\extrarowheight=\dimen145
-\NC@list=\toks21
-\extratabsurround=\skip52
-\backup@length=\skip53
-\ar@cellbox=\box48
-) (c:/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2019-03-05 LaTeX2e option processing using LaTeX3 keys
-)
-\l__siunitx_tmp_box=\box49
-\l__siunitx_tmp_dim=\dimen146
-\l__siunitx_tmp_int=\count191
-\l__siunitx_number_mantissa_length_int=\count192
-\l__siunitx_number_uncert_length_int=\count193
-\l__siunitx_round_int=\count194
-\l__siunitx_process_decimal_int=\count195
-\l__siunitx_process_uncertainty_int=\count196
-\l__siunitx_process_fixed_int=\count197
-\l__siunitx_process_integer_min_int=\count198
-\l__siunitx_process_precision_int=\count199
-\l__siunitx_group_min_int=\count266
-\l__siunitx_angle_marker_box=\box50
-\l__siunitx_angle_unit_box=\box51
-\l__siunitx_angle_marker_dim=\dimen147
-\l__siunitx_angle_unit_dim=\dimen148
-\l__siunitx_unit_int=\count267
-\l__siunitx_unit_denominator_int=\count268
-\l__siunitx_unit_numerator_int=\count269
-\l__siunitx_unit_prefix_int=\count270
-\l__siunitx_unit_prefix_base_int=\count271
-\l__siunitx_unit_prefix_gram_int=\count272
-\l__siunitx_number_product_int=\count273
-\c__siunitx_one_fill_skip=\skip54
-\l__siunitx_table_unit_align_skip=\skip55
-\l__siunitx_table_exponent_dim=\dimen149
-\l__siunitx_table_integer_dim=\dimen150
-\l__siunitx_table_mantissa_dim=\dimen151
-\l__siunitx_table_marker_dim=\dimen152
-\l__siunitx_table_result_dim=\dimen153
-\l__siunitx_table_uncert_dim=\dimen154
-\l__siunitx_table_fill_pre_dim=\dimen155
-\l__siunitx_table_fill_post_dim=\dimen156
-\l__siunitx_table_fill_mid_dim=\dimen157
-\l__siunitx_table_pre_box=\box52
-\l__siunitx_table_post_box=\box53
-\l__siunitx_table_mantissa_box=\box54
-\l__siunitx_table_result_box=\box55
-\l__siunitx_table_number_align_skip=\skip56
-\l__siunitx_table_text_align_skip=\skip57
- (c:/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
- (c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-))) (c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter2.aux)
-\openout1 = `Chapter2.aux'.
+) (c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux)
+\openout1 = `Chapter3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -324,122 +265,40 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-Now handling font encoding TS1 ...
-... processing UTF-8 mapping file for font encoding TS1
- (c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
-   defining Unicode char U+00A2 (decimal 162)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00A4 (decimal 164)
-   defining Unicode char U+00A5 (decimal 165)
-   defining Unicode char U+00A6 (decimal 166)
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00A8 (decimal 168)
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AC (decimal 172)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00AF (decimal 175)
-   defining Unicode char U+00B0 (decimal 176)
-   defining Unicode char U+00B1 (decimal 177)
-   defining Unicode char U+00B2 (decimal 178)
-   defining Unicode char U+00B3 (decimal 179)
-   defining Unicode char U+00B4 (decimal 180)
-   defining Unicode char U+00B5 (decimal 181)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+00B9 (decimal 185)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+00BC (decimal 188)
-   defining Unicode char U+00BD (decimal 189)
-   defining Unicode char U+00BE (decimal 190)
-   defining Unicode char U+00D7 (decimal 215)
-   defining Unicode char U+00F7 (decimal 247)
-   defining Unicode char U+0192 (decimal 402)
-   defining Unicode char U+02C7 (decimal 711)
-   defining Unicode char U+02D8 (decimal 728)
-   defining Unicode char U+02DD (decimal 733)
-   defining Unicode char U+0E3F (decimal 3647)
-   defining Unicode char U+2016 (decimal 8214)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+203B (decimal 8251)
-   defining Unicode char U+203D (decimal 8253)
-   defining Unicode char U+2044 (decimal 8260)
-   defining Unicode char U+204E (decimal 8270)
-   defining Unicode char U+2052 (decimal 8274)
-   defining Unicode char U+20A1 (decimal 8353)
-   defining Unicode char U+20A4 (decimal 8356)
-   defining Unicode char U+20A6 (decimal 8358)
-   defining Unicode char U+20A9 (decimal 8361)
-   defining Unicode char U+20AB (decimal 8363)
-   defining Unicode char U+20AC (decimal 8364)
-   defining Unicode char U+20B1 (decimal 8369)
-   defining Unicode char U+2103 (decimal 8451)
-   defining Unicode char U+2116 (decimal 8470)
-   defining Unicode char U+2117 (decimal 8471)
-   defining Unicode char U+211E (decimal 8478)
-   defining Unicode char U+2120 (decimal 8480)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2126 (decimal 8486)
-   defining Unicode char U+2127 (decimal 8487)
-   defining Unicode char U+212E (decimal 8494)
-   defining Unicode char U+2190 (decimal 8592)
-   defining Unicode char U+2191 (decimal 8593)
-   defining Unicode char U+2192 (decimal 8594)
-   defining Unicode char U+2193 (decimal 8595)
-   defining Unicode char U+2329 (decimal 9001)
-   defining Unicode char U+232A (decimal 9002)
-   defining Unicode char U+2422 (decimal 9250)
-   defining Unicode char U+25E6 (decimal 9702)
-   defining Unicode char U+25EF (decimal 9711)
-   defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
-) (c:/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
-Dictionary: translator-basic-dictionary, Language: English 
-) (c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+\matrixtoks=\toks21
+\matrixtoks=\toks22
+ [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 \matrixtoks=\toks23
 \matrixtoks=\toks24
- [3]
-\matrixtoks=\toks25
-\matrixtoks=\toks26
  [4]
-\matrixtoks=\toks27
-\matrixtoks=\toks28
-\matrixtoks=\toks29
- [5]
-\matrixtoks=\toks30
-\matrixtoks=\toks31
-\matrixtoks=\toks32
- [6] [7] (c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter2.aux) ) 
+Overfull \hbox (9.69408pt too wide) detected at line 255
+[]
+ []
+
+[5] [6] (c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.aux) ) 
 Here is how much of TeX's memory you used:
- 13542 strings out of 492623
- 272365 string characters out of 6133291
- 301732 words of memory out of 5000000
- 17432 multiletter control sequences out of 15000+600000
- 543641 words of font info for 69 fonts, out of 8000000 for 9000
+ 11055 strings out of 492623
+ 205560 string characters out of 6133291
+ 250532 words of memory out of 5000000
+ 14980 multiletter control sequences out of 15000+600000
+ 540820 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,27n,65p,648b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter2.pdf" (7 pages, 144537 bytes).
+ 47i,25n,65p,492b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "c:/Users/lenovo/OneDrive/桌面/Physics/Quantum Mechanics/Townsend-Quantum-Mechanics-textbook-solutions-notes/Solution/Chapter 3/Chapter3.pdf" (6 pages, 136975 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
